@@ -1,11 +1,37 @@
 <!DOCTYPE html>
 <html lang="id">
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
     <head>
         <script type="text/javascript" async
             src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML">
         </script>
-        <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
+        
         <style>
+            @media only screen and (max-width: 620px) {
+                .main {       
+                    width: 100%; padding: 20px; 
+                    text-align: left;
+                    line-height: 1.5em;
+                    font-size: 12pt;
+                }
+            }
+            
+            @media only screen and (min-width: 621px) {
+                .main {
+                    width: 600px;
+                    padding: 20px;
+                    margin: 0px;
+                    text-align: justify;
+                    line-height: 1.5em;
+                    font-size: 12pt;
+                }            
+            }
+
             body {
                 font-family: 'Libre Baskerville', serif;
             }
@@ -16,14 +42,6 @@
             flex-direction: column;
             justify-content: center;
             flex-wrap: wrap;
-            }
-
-            .flex-container > div {        
-            width: 600px;
-            margin: 0px;
-            text-align: justify;
-            line-height: 1.5em;
-            font-size: 12pt;
             }
             
             a {
@@ -44,6 +62,7 @@
                 margin-top: 2em;
                 margin-bottom: 1em;
                 font-size: 12pt;
+                font-weight: bold;
             }
 
             h1 {
@@ -51,6 +70,7 @@
                 margin-bottom: 5em;
                 line-height: 1.5em;
                 font-size: 24pt;
+                font-weight: bold;
             }
 
             h6 {
@@ -72,7 +92,7 @@
 
     <body>
         <div class="flex-container">
-            <div>
+            <div class="main">
                 <h6>
                     Bab 1 
                 </h6>
@@ -95,7 +115,7 @@
                 <hr color=black size=1>
             </div> -->
 
-            <div>
+            <div class="main"> 
                 <h2>
                     1–1&ensp; Aku dan Kau Berbeda
                 </h2>
@@ -126,7 +146,7 @@
                     1–3&ensp; <em>What You See is (not) What You Get</em>
                 </h2>
                 <p>
-                    Bayangkan ketika kita berdesakan memasuki suatu pasar yang sangat ramai, kita akan merasakan bagaimana kita terdorong ke berbagai arah. Gerakan kita akan sangat acak. Gerakan acak ini juga terjadi pada atom. Ketika atom bergerak acak, gerakan acak tersebut akan mempengaruhi atom di sekitarnya. Fenomena ini yang kita kenali sebagai kalor. Semakin acak dan hebat gerakan suatu atom, semakin tinggi kalor yang dihasilkan. Selama suhu suatu objek tidak mencapai \(0 K\), atom penyusun objek tersebut tidak akan pernah berhenti bergerak acak. Bayangkan, seluruh objek di sekitar kita yang tampak diam, sebenarnya menyimpan atom yang terus bergerak. Tidak ada yang tetap diam di tempat.
+                    Bayangkan ketika kita berdesakan memasuki suatu pasar yang sangat ramai, kita akan merasakan bagaimana kita terdorong ke berbagai arah. Gerakan kita akan sangat acak. Gerakan acak ini juga terjadi pada atom. Ketika atom bergerak acak, gerakan acak tersebut akan mempengaruhi atom di sekitarnya. Fenomena ini yang kita kenali sebagai kalor. Semakin acak dan hebat gerakan suatu atom, semakin tinggi kalor yang dihasilkan. Selama suhu suatu objek tidak mencapai \(0\,\textrm{K}\), atom penyusun objek tersebut tidak akan pernah berhenti bergerak acak. Bayangkan, seluruh objek di sekitar kita yang tampak diam, sebenarnya menyimpan atom yang terus bergerak. Tidak ada yang tetap diam di tempat.
                 </p>
                 
                 <h2>
@@ -150,5 +170,7 @@
                 </p>
             </div> 
         </div>
+        <div style="height: 2em"></div>
+        <div style="height: 2em; background-color: #004d40; max-width: 100%"></div>
     </body>
 </html>
