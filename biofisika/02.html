@@ -9,14 +9,14 @@
         <script type="text/javascript" async
             src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML">
         </script>
-        <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:regular,italic,bold&display=swap" rel="stylesheet">
         
         <style>
             @media only screen and (max-width: 620px) {
                 .main {       
                     width: 100%; padding: 20px; 
                     text-align: left;
-                    line-height: 1.5em;
+                    line-height: 1.7em;
                     font-size: 12pt;
                     color: black;
                 }
@@ -28,7 +28,7 @@
                     padding: 20px;
                     margin: 0px;
                     text-align: justify;
-                    line-height: 1.5em;
+                    line-height: 1.7em;
                     font-size: 12pt;
                     color: black;
                 }            
@@ -87,10 +87,21 @@
                 color: black;
             }
 
+            .italicbold {
+                display: inline-block;
+                font-style: normal;
+                -webkit-transform: skewX(-12deg);
+                -moz-transform: skewX(-12deg);
+                -ms-transform: skewX(-12deg);
+                -o-transform: skewX(-12deg);
+                transform: skewX(-12deg);
+                /* padding: 0 0.4em; */
+            }
+
         </style>
         
         <title>
-            Biofisika Bab 1: Berkenalan
+            Biofisika Bab 2: Aturan
         </title>
         <meta name="theme-color" content="#004d40" />
     </head>
@@ -121,26 +132,26 @@
             </div> -->
 
             <div class="main"> 
-                <p class="subchapter">
+                <p id="S1" class="subchapter">
                     2–1&ensp; Atom yang Mandiri
                 </p>
                 <p>
-                    Beberapa molekul dapat bergabung membentuk suatu molekul baru yang lebih besar melalui fenomena fusi. Sebuah molekul juga dapat terpecah menjadi beberapa molekul lain yang lebih kecil melalui fenomena fisi. Namun, terdapat suatu fenomena lain yang melibatkan beberapa molekul yang mulanya dalam kondisi acak menjadi suatu struktur yang terorganisir. Fenomena ini disebut sebagai <i>self assembly</i>. 
+                    Beberapa molekul dapat bergabung membentuk suatu molekul baru yang lebih besar melalui fenomena fusi. Sebuah molekul juga dapat terpecah menjadi beberapa molekul lain yang lebih kecil melalui fenomena fisi. Namun, terdapat suatu fenomena lain yang melibatkan beberapa molekul yang mulanya dalam kondisi acak menjadi suatu struktur yang terorganisir. Fenomena ini disebut sebagai <em>self assembly</em>. 
                 </p>
                 <p>
                     Suatu atom cenderung untuk berada pada level energi terendahnya. Kita dapat membayangkan fenomena ini dengan suatu analogi. Bayangkan kita memiliki sebuah bola yang terjebak dalam suatu lembah yang cukup curam, sedemikian sehingga dia dapat mempertahankan posisinya. Kemudian, bayangkan terdapat suatu lintasan yang menghubungkan lembah tersebut dengan lembah lain yang sama curamnya dan memiliki posisi lebih rendah. Namun, lintasan tersebut memiliki tanjakan dan turunan seperti ketika kita menaiki sebuah gunung dan menuruni kawahnya. Jika dorongan yang kita berikan tidak cukup kuat, maka bola tersebut akan kembali ke posisi semula. Namun, jika dorongan yang kita berikan memberikan cukup kecepatan, maka bola tersebut dapat jatuh ke kawah. Ketika kawah kedua tersebut memiliki ketinggian yang lebih rendah dibandingkan dengan kawah pertama, bola tersebut melepaskan energi yang tersimpan di dalamnya sehingga total energi yang ada di bola saat ini menjadi lebih rendah. Analogi dorongan merepresentasikan energi yang diberikan pada atom. Untuk dapat menghasilkan energi, atom tersebut harus terlebih dulu menyerap energi.
                 </p>
                 <p>
-                    Salah satu contoh dari <i>self assembly</i> yang saya ketahui dan kita semua dapat jumpai adalah sabun. Apa hubungan antara sabun dengan <i>self assembly</i>? Ketika tangan kita berminyak, kita akan kesulitan untuk membersihkannya bila kita hanya menggunakan air. Sebagian minyak akan tetap menempel pada tangan kita. Namun, jika kita mengusap sabun ke tangan kita terlebih dulu, maka minyak tersebut dapat lebih mudah lepas. Kenapa ini bisa terjadi? 
+                    Salah satu contoh dari <em>self assembly</em> yang saya ketahui dan kita semua dapat jumpai adalah sabun. Apa hubungan antara sabun dengan <em>self assembly</em>? Ketika tangan kita berminyak, kita akan kesulitan untuk membersihkannya bila kita hanya menggunakan air. Sebagian minyak akan tetap menempel pada tangan kita. Namun, jika kita mengusap sabun ke tangan kita terlebih dulu, maka minyak tersebut dapat lebih mudah lepas. Kenapa ini bisa terjadi? 
                 </p>
                 <p>
-                    Sabun terdiri dari serangkaian molekul dengan dua ujung. Salah satu ujung memiliki karakteristik yang <i>suka</i> dengan air. Di sisi lain, sabun juga memiliki ujung yang <i>benci</i> dengan air. Sifat suka air disebut sebagai hidrofilik, sedangkan sifat benci air disebut sebagai hidrofobik (berakhiran <i>fobik</i>, dari kata <i>fobia</i> yang berarti <i>takut</i>). Air dan minyak dalam kondisi normal cenderung untuk tidak menyatu. Minyak akan membentuk suatu lapisan pada permukaan air. Ketika kita menambahkan sabun, ujung hidrofobik dari sabun akan menjauh dari sisi air dan cenderung menempel pada minyak. Di sisi lain, ujung hidrofilik menempel pada molekul air. Karena terbatasnya molekul minyak dan air yang bisa ditangkap oleh sabun, setiap molekul sabun harus bekerja sama untuk menangkap molekul minyak tersebut. Molekul sabun akan membentuk suatu formasi melingkar yang menjaga ujung hidrofobik tetap di dalam lingkaran bersama dengan molekul minyak. Molekul sabun, yang semula terpisah satu sama lain, perlahan membentuk suatu formasi melingkar ketika terdapat minyak dalam air. Yang semula tidak teratur menjadi teratur. Bukankah ini menarik, bahwa mereka membentuk suatu formasi secara mandiri? Tidak ada yang memimpin mereka, tapi masing-masing molekul seolah sadar bahwa mereka harus melakukan sesuatu.
+                    Sabun terdiri dari serangkaian molekul dengan dua ujung. Salah satu ujung memiliki karakteristik yang “suka” dengan air. Di sisi lain, sabun juga memiliki ujung yang “benci” dengan air. Sifat suka air disebut sebagai hidrofilik, sedangkan sifat benci air disebut sebagai hidrofobik (berakhiran <em>fobik</em>, dari kata <em>fobia</em> yang berarti <em>takut</em>). Air dan minyak dalam kondisi normal cenderung untuk tidak menyatu. Minyak akan membentuk suatu lapisan pada permukaan air. Ketika kita menambahkan sabun, ujung hidrofobik dari sabun akan menjauh dari sisi air dan cenderung menempel pada minyak. Di sisi lain, ujung hidrofilik menempel pada molekul air. Karena terbatasnya molekul minyak dan air yang bisa ditangkap oleh sabun, setiap molekul sabun harus bekerja sama untuk menangkap molekul minyak tersebut. Molekul sabun akan membentuk suatu formasi melingkar yang menjaga ujung hidrofobik tetap di dalam lingkaran bersama dengan molekul minyak. Molekul sabun, yang semula terpisah satu sama lain, perlahan membentuk suatu formasi melingkar ketika terdapat minyak dalam air. Yang semula tidak teratur menjadi teratur. Bukankah ini menarik, bahwa mereka membentuk suatu formasi secara mandiri? Tidak ada yang memimpin mereka, tapi masing-masing molekul seolah sadar bahwa mereka harus melakukan sesuatu.
                 </p>
 
-                <p class="subchapter">
+                <p id="S2" class="subchapter">
                     2–2&ensp; Jas Merah?
                 <p>
-                    Kita biasa menggunakan besaran usia untuk memberikan gambaran seberapa lama waktu yang telah berlangsung sejak kita lahir sampai saat ini. Seiring dengan bertambahnya usia, kita terus tumbuh. Berbagai jenis atom masuk dan keluar dari tubuh kita. Sebagian ada yang menjadi bagian dari diri kita. Namun, kita telah membahas hal ini pada Bab 1: apakah kita benar-benar memilikinya? Kita secara konstan berbagi atom dengan berbagai hal di dunia ini. Atom karbon yang kita miliki sekarang mungkin berbeda dengan atom karbon yang ada persis saat kita lahir. Bisa jadi, atom karbon yang dulu sempat singgah di tubuh kita sedang berada di diri orang lain. Lalu, jika memang seluruh atom yang ada pada tubuh kita tidak selamanya menjadi milik kita, maka apa yang dimaksud dengan usia? Usia *siapa*? Usia atom? Menariknya, atom penyusun tubuh kita sudah ada jauh sekali sebelum kita lahir. Kemudian berapa usia dari atom penyusun tubuh kita? Tunggu dulu, apa untungnya bagi kita tahu berapa usia dari atom penyusun tubuh kita? 
+                    Kita biasa menggunakan besaran usia untuk memberikan gambaran seberapa lama waktu yang telah berlangsung sejak kita lahir sampai saat ini. Seiring dengan bertambahnya usia, kita terus tumbuh. Berbagai jenis atom masuk dan keluar dari tubuh kita. Sebagian ada yang menjadi bagian dari diri kita. Namun, kita telah membahas hal ini pada Bab 1: apakah kita benar-benar memilikinya? Kita secara konstan berbagi atom dengan berbagai hal di dunia ini. Atom karbon yang kita miliki sekarang mungkin berbeda dengan atom karbon yang ada persis saat kita lahir. Bisa jadi, atom karbon yang dulu sempat singgah di tubuh kita sedang berada di diri orang lain. Lalu, jika memang seluruh atom yang ada pada tubuh kita tidak selamanya menjadi milik kita, maka apa yang dimaksud dengan usia? Usia <em>siapa</em>? Usia atom? Menariknya, atom penyusun tubuh kita sudah ada jauh sekali sebelum kita lahir. Kemudian berapa usia dari atom penyusun tubuh kita? Tunggu dulu, apa untungnya bagi kita tahu berapa usia dari atom penyusun tubuh kita? 
                 </p>
             </div> 
         </div>
