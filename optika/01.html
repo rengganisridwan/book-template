@@ -14,7 +14,7 @@
         <!-- To automatically render math in text elements, include the auto-render extension: -->
         <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
         onload="renderMathInElement(document.body);"></script>
-
+        
         <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:regular,italic,bold&display=swap" rel="stylesheet">
         
         <style>
@@ -99,6 +99,7 @@
                 font-size: 24pt;
                 font-weight: bold;
                 color: black;
+                text-align: left;
             }
 
             h6 {
@@ -115,22 +116,18 @@
             .italicbold {
                 display: inline-block;
                 font-style: normal;
-                -webkit-transform: skewX(-20deg);
-                -moz-transform: skewX(-20deg);
-                -ms-transform: skewX(-20deg);
-                -o-transform: skewX(-20deg);
-                transform: skewX(-20deg);
+                -webkit-transform: skewX(-12deg);
+                -moz-transform: skewX(-12deg);
+                -ms-transform: skewX(-12deg);
+                -o-transform: skewX(-12deg);
+                transform: skewX(-12deg);
                 /* padding: 0 0.4em; */
-            }
-
-            .katex {
-                font-weight: normal;
             }
 
         </style>
         
         <title>
-            Biofisika Bab 1: Berkenalan
+            Optika Bab 1: Sistem Pencitraan 3-Dimensi Berbasis Bayangan
         </title>
         <meta name="theme-color" content="#004d40" />
     </head>
@@ -142,7 +139,7 @@
                     Bab 1 
                 </h6>
                 <h1>
-                    Berkenalan
+                    Sistem Pencitraan 3-Dimensi Berbasis Bayangan Stereoskopis
                 </h1>
 <!-- 
                 <p style="text-indent: 0">Konten</p>
@@ -162,33 +159,28 @@
 
             <div class="main"> 
                 <p id="S1" class="subchapter">
-                    1–1&ensp; Aku dan Kau Berbeda
+                    1–1&ensp; Desain Sistem
                 </p>
                 <p>
-                    Apa yang membedakan diri kita dengan orang lain? Apakah nama? Bisa jadi di belahan dunia lain terdapat orang dengan nama yang sama dengan diri kita. Saya telah mengamati secara langsung dua teman seangkatan saya di SMA memiliki nama yang sama persis. Sampai ketika memasuki masa orientasi sekolah, panitia sempat kebingungan saat mendata nama siswa baru. Pada akhirnya, panitia memutuskan memberi label A dan B sebagai pembeda (dan kebetulan label tersebut mewakili inisial nama panggilan mereka masing-masing, entah itu kebetulan atau mereka berdua “sengaja”). Walaupun nama mereka sama, saya tetap tidak menganggap mereka orang yang sama. Mereka berada di kelas yang berbeda. Kebetulan lagi, salah satu dari mereka adalah teman sekelas saya sehingga saya cukup familiar dengan wajah salah satunya. Ketika disandingkan, wajah mereka berbeda. Karakter suara mereka pun berbeda. Postur mereka berbeda. Organisasi yang mereka ikuti pun berbeda. Bahkan, waktu lulus mereka berbeda! (faktanya, salah satu dari mereka berada di kelas akselerasi sehingga dapat lulus dari SMA lebih cepat satu tahun). Hal ini cukup membuat saya mengetahui sebuah fakta bahwa nama yang sama tidak membuat dua orang memiliki karakter yang sama. 
+                    Sistem dirancang berbentuk balok dengan dimensi bagian dalam \(44\) \(\textrm{x}\) \(33,5\) \(\textrm{x}\) \(22,5\) \(\textrm{cm}\). Pada dinding bagian depan terdapat lubang berbentuk persegi panjang dengan ukuran \(37\) \(\textrm{x}\) \(17\) \(\textrm{cm}\) sebagai tempat meletakkan layar. Layar yang digunakan berupa kertas kalkir. Hal tersebut dipilih karena kertas kalkir memiliki daya tembus cahaya yang lebih baik dibandingkan dengan kertas HVS biasa, tetapi tidak dengan mudah meloloskan semua cahaya yang diterima sehingga masih dapat terbentuk citra bayangan dari objek yang disinari ke arahnya. Karena kertas kalkir merupakan kertas yang cukup peka dengan tingkat kelembaban di sekitarnya, saya memilih kertas kalkir dengan gramatur \(80\) \(\textrm{g}\). Ukuran kertas kalkir disesuaikan sedemikian sehingga dapat menutup lubang pada dinding bagian depan. Sumber cahaya berupa LED diletakkan sejauh \(30\) \(\textrm{cm}\) dari layar. LED tersebut diletakkan bersebelahan dengan jarak masing-masing \(5\) \(\textrm{cm}\) dari titik tengah dinding belakang. Di depan masing-masing LED diberi mika berwarna merah dan biru. Terdapat 1 lapis mika berwarna merah di depan LED pertama dan 2 lapis mika berwarna biru di depan LED kedua. Dinding bagian dalam dilapisi busa hitam untuk menghindari adanya sumber cahaya lain yang dihasilkan dari pantulan cahaya pada dinding.
                 </p>
-                <p>
-                    Lalu apakah fisik yang membuat orang berbeda? Saya memiliki pengalaman lain soal ini. Salah satu saudara saya adalah anak kembar. Mereka lahir dengan selisih waktu yang tidak jauh berbeda dan memiliki fisik yang hampir sama. Saya sendiri baru bisa benar-benar membedakan mereka berdua setelah salah satu dari mereka rutin menggunakan kacamata, dan itu setelah mereka masuk perguruan tinggi. Menariknya, mereka <em>hampir</em> selalu bersama. Masuk TK yang sama, SD yang sama, SMP yang sama, SMA yang sama, bahkan perguruan tinggi yang sama! (walaupun begitu, masing-masing dari mereka <em>akhirnya</em> mengambil fakultas yang berbeda). Orang tuanya sempat benar-benar cukup khawatir jika mereka terus bersama (bayangkan ketika mereka berkeluarga). Pada akhirnya, setelah mereka lulus dari perguruan tinggi, mereka memilih jalan yang cukup berbeda. Sang adik memilih melanjutkan pendidikannya ke S2, sedangkan sang kakak memilih langsung berkarir selepas mendapat gelar sarjana. Fisik yang tampak sama juga tidak menjadikan dua orang memiliki karakter yang sama. 
-                </p>
-                <p>
-                    Sebagai pembuka, kita perlu mengurai permasalahan ini sehingga kita mendapatkan komponen terkecilnya. Untuk dapat benar-benar mengamati bagaimana dua objek dikatakan berbeda, kita perlu memahami substansi terkecilnya, atom. Ketika kita dapat memahami fenomena yang muncul pada sebuah atom, perlahan kita dapat memiliki sudut pandang baru dalam melihat berbagai fenomena yang biasa kita lihat. Menariknya, beberapa fenomena yang terjadi pada atom dapat dijelaskan dengan fenomena yang kita amati sehari-hari. Oleh karena itu, kita akan mulai menjelaskan bagaimana atom berinteraksi satu sama lain dengan sesuatu yang setiap hari dapat kita jumpai, matahari.
-                </p>
+                <img src="img/1-1.png" alt="Girl in a jacket" style="width: 560px"> 
 
                 <p id="S2" class="subchapter">
-                    1–2&ensp; Bersama atau Berpisah?
+                    1–2&ensp; Metode Pengambilan Data
                 </p>
                 <p>
-                    Sebagai pembuka, kita perlu mengurai permasalahan ini sehingga kita mendapatkan komponen terkecilnya. Untuk dapat benar-benar mengamati bagaimana dua objek dikatakan berbeda, kita perlu memahami substansi terkecilnya, atom. Ketika kita dapat memahami fenomena yang muncul pada sebuah atom, perlahan kita dapat memiliki sudut pandang baru dalam melihat berbagai fenomena yang biasa kita lihat. Menariknya, beberapa fenomena yang terjadi pada atom dapat dijelaskan dengan fenomena yang kita amati sehari-hari. Oleh karena itu, kita akan mulai menjelaskan bagaimana atom berinteraksi satu sama lain dengan sesuatu yang setiap hari dapat kita jumpai, matahari.
+                    Pengambilan data dilakukan dengan bantuan USAF 1951 Resolution Test Chart [1] sebagai objek. Objek diletakkan paralel terhadap layar. Lalu dilakukan variasi jarak objek dengan layar, dimulai dari jarak 5 cm sampai 30 cm, dengan penambahan jarak 5 cm. Citra yang muncul direkam menggunakan kamera digital. Video tersebut kemudian diolah dengan perangkat lunak FFmpeg untuk mendapatkan masing-masing satu buah file citra untuk masing-masing jarak. File citra tersebut kemudian diolah menggunakan ImageJ. Di dalam ImageJ, sebuah file citra dipisahkan menjadi 3 kanal berbeda: merah, hijau, dan biru, melalui menu Image > Color > Split Channels. Karena sistem yang saya rancang menggunakan mika berwarna merah dan biru saja, maka saya hanya mengolah citra pada kanal merah dan biru saja. Kemudian saya secara visual mensortir file yang ada untuk mencari file mana yang dapat menampilkan elemen dan grup terkecil pada USAF 1951 Resolution Test Chart dengan jelas. Didapatkan hipotesis bahwa file citra pada jarak 5 cm dapat me-resolve komponen elemen 4 dari grup 0. Untuk memperkuat hipotesis tersebut, saya perlu melakukan analisis visibilitas pada seluruh elemen pada grup tersebut. Kemudian saya melakukan line plotting dengan menggambar sebuah garis melintang pada masing-masing elemen pada grup 0, dilanjutkan dengan melihat kurva intensitas sepanjang garis tersebut melalui menu Analyze > Plot Profile. Saya melakukan 3 kali line plotting untuk masing-masing elemen, baik vertikal maupun horizontal, untuk meminimalisir kesalahan dalam data yang saya olah.
                 </p>
                 <p>
-                    Setiap molekul tersusun atas atom yang terdiri dari proton, neutron, dan elektron.<a class="exlink" href="https://en.wikipedia.org/wiki/Molecule" target="_blank">1</a> Proton memiliki muatan positif, sedangkan elektron memiliki muatan negatif. Neutron adalah partikel netral. Kita dapat membayangkan atom sebagai sebuah bola yang dikelilingi oleh suatu awan. Bola ini mewakili inti atom, sedangkan awan yang mengelilinginya mewakili elektron. Bola tersebut terdiri dari dua partikel penyusun: proton dan neutron. Karena proton memiliki muatan positif dan neutron bersifat netral, bola tersebut secara keseluruhan akan bermuatan positif. Di sisi lain, awan yang mengelilinginya akan bermuatan negatif karena tersusun atas elektron. Seperti pada magnet, muatan yang berbeda akan saling tarik menarik. Namun, kenapa awan ini tidak hilang dan terserap ke dalam bola? Sayangnya saat ini saya tidak memiliki kemampuan untuk dapat menjelaskannya dengan baik. Penjelasan atas permasalahan tersebut berada pada ranah fisika kuantum, di mana segala fenomena yang terjadi di sana jauh berbeda dengan apa yang kita alami sehari-hari. Untuk saat ini, kita harus meyakini bahwa hal ini dapat terjadi: walaupun elektron dan inti atom memiliki muatan yang berbeda, mereka tidak menyatu. Kemudian kenapa setiap proton dapat menyatu menjadi inti atom dan tidak saling tolak menolak? Sayangnya pertanyaan ini juga sama rumitnya bagi saya seperti pada pertanyaan sebelumnya. Singkatnya, terdapat suatu gaya yang sangat luar biasa sedemikian sehingga setiap proton dalam inti atom tetap menyatu. Interaksi ini disebut sebagai <em>nuclear force</em>.
+                    Dari data yang saya olah dengan split channels dan line plotting pada ImageJ, didapatkan kurva intensitas warna abu abu (0 untuk hitam dan 255 untuk putih) terhadap posisi (dalam pixel). Kurva tersebut dapat disimpan dengan menu More >> Copy All Data dan mem-paste data tersebut dalam perangkat lunak Microsoft Excel. Data-data intensitas tadi akan muncul dalam bentuk tabel yang berisi sederetan pasangan nilai pixel (kolom x) dan intensitas untuk (kolom y). Dengan menggunakan menu Analyze > Set Scale pada elemen yang saya tahu persis ukurannya (elemen 1 grup -2 memiliki ukuran 10 mm), saya dapat mengetahui berapa panjang 1 pixel jika dibandingkan dengan ukuran sebenarnya. Setelah saya gunakan menu tersebut, didapat citra yang saya olah memiliki skala 4,125 pixels/mm yang artinya 1 pixel dalam citra saya sama dengan 0,242 mm. 
                 </p>
                 <p>
                     Matahari terdiri dari dua elemen penyusun utama: hidrogen dan helium. Hidrogen memiliki ukuran yang lebih kecil dari helium. Atom hidrogen hanya terdiri dari satu proton dan satu elektron, menjadikannya elemen paling kecil dalam tabel periodik. Dalam kondisi normal, dua atom hidrogen yang saling berdekatan akan saling tolak menolak. Hal ini disebabkan oleh interaksi dari elektron yang ada di masing-masing atom. Walaupun dari kejauhan matahari tampak tidak bergerak, atom hidrogen dalam matahari terus bergerak. Matahari memiliki ukuran yang besar. Ketika sekumpulan atom berkumpul dan membentuk ukuran yang besar, gaya gravitasi yang dihasilkan akan semakin besar. Semua atom hidrogen akan berlomba-lomba untuk mencapai pusat matahari. Dalam mencapai tujuan tersebut, berbagai atom hidrogen akan saling berdesakan sedemikian sehingga inti atom dari dua buah atom hidrogen dapat menyatu, membentuk elemen baru yang disebut helium. Penyatuan ini disebut sebagai fusi. Selain membentuk elemen baru, fusi juga menghasilkan energi berupa gelombang elektromagnetik. Energi inilah yang kemudian kita terima di Bumi sebagai cahaya dan panas dari matahari. Di samping fusi, terdapat fenomena yang disebut sebagai fisi. Fisi juga menghasilkan energi. Namun, berbeda dengan fusi, fisi disebabkan oleh terpecahnya sebuah elemen yang lebih besar menjadi beberapa elemen yang lebih kecil. Bayangkan fenomena ini sebagai balon yang terbuat dari karet yang sangat tipis, sedemikian sehingga gesekan tangan kita pada permukaan balon tersebut cukup untuk membuatnya meletus. Veritasium memiliki pendekatan yang menarik mengenai bagaimana matahari mendapatkan energinya.<a class="exlink" href="https://youtu.be/Ux33-5k8cjg" target="_blank">2</a>
                 </p>
 
                 <p id="S3" class="subchapter">
-                    1–3&ensp; <em class="italicbold">What You See is (not) What You Get</em>
+                    1–3&ensp; <em class="italicbold">What You See is (not) What You Get</em> 
                 </p>
                 <p>
                     Bayangkan ketika kita berdesakan memasuki suatu pasar yang sangat ramai, kita akan merasakan bagaimana kita terdorong ke berbagai arah. Gerakan kita akan sangat acak. Gerakan acak ini juga terjadi pada atom. Ketika atom bergerak acak, gerakan acak tersebut akan mempengaruhi atom di sekitarnya. Fenomena ini yang kita kenali sebagai kalor. Semakin acak dan hebat gerakan suatu atom, semakin tinggi kalor yang dihasilkan. Selama suhu suatu objek tidak mencapai \(0\,\textrm{K}\), atom penyusun objek tersebut tidak akan pernah berhenti bergerak acak. Bayangkan, seluruh objek di sekitar kita yang tampak diam, sebenarnya menyimpan atom yang terus bergerak. Tidak ada yang tetap diam di tempat.
